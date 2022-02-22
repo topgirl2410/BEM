@@ -10,7 +10,8 @@
 
 html {
     background-color: var(--azul);
-    font-size: 62.5%; /** 1rem = 10px **/
+    font-size: 62.5%;
+    /** 1rem = 10px **/
     box-sizing: border-box;
 }
 
@@ -86,3 +87,6 @@ img {
     color: var(--blanco);
     padding: 0;
 }
+
+/** BEM (Block Element Modifier)**/
+
