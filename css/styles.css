@@ -90,3 +90,82 @@ img {
 
 /** BEM (Block Element Modifier)**/
 
+/** Productos **/
+
+.productos {
+    margin-top: 5rem;
+}
+
+.productos__heading {
+    color: var(--blanco);
+    text-align: center;
+    padding: 3rem;
+}
+
+@media (min-width: 768px) {
+    .productos__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
+
+/** Producto **/
+
+.producto {
+    background-color: var(--blanco);
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .producto {
+        margin-bottom: 0;
+    }
+}
+
+.producto__contenido {
+    padding: 2rem;
+}
+
+.producto__nombre {
+    font-size: 4rem;
+}
+
+.producto__descripcion {
+    color: #8b8b8b;
+    margin: 0;
+}
+
+.producto__precios {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.producto__precio {
+    font-size: 4rem;
+    color: green;
+    font-weight: 900;
+    margin: 0;
+}
+/** bloque__elemento--modificador **/
+.producto__precio--oferta {
+    color: red;
+    text-decoration: line-through;
+}
+
+.producto__boton {
+    all: unset;
+    /** Elimina la apariencia predeterminada del boton **/
+    background-color: var(--azul);
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    color: var(--blanco);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.producto__boton:hover {
+    background-color: #014570;
+}
